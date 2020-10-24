@@ -7,7 +7,12 @@ use GDO\UI\GDT_Link;
 
 final class Module_Ranzgruppe extends GDO_Module
 {
-    public function getDependencies() { return ['Classic', 'Audio']; }
+    public function getDependencies()
+    {
+        return ['Classic', 'Audio', 'Account', 'Admin', 'Login', 'Register', 'Vote', 'Comment',
+            'JQuery', 
+        ];
+    }
     
     public function onLoadLanguage() { return $this->loadLanguage('lang/ranzgruppe'); }
     
