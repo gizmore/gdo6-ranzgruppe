@@ -38,7 +38,7 @@ final class Module_Ranzgruppe extends GDO_Module
     public function hookTopBar(GDT_Bar $nav)
     {
         $nav->addFields(array(
-            GDT_Link::make('link_home')->href(href('Ranzgruppe', 'Home'))->css('font-size', '34px'),
+            GDT_Link::make('link_home')->href(href('Ranzgruppe', 'Home'))->css('font-size', '28px'),
         ));
     }
     
