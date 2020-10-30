@@ -4,7 +4,7 @@
 
 <h2>What ist Ranzgruppe?</h2>
 <p>Ranzgruppe is a punk band from Peine, Lower saxony.
-Everyone can participate, as long as they know how to sing or play an instrument.</p>
+Almost everyone can participate, as long as they know how to sing or play an instrument.</p>
 <p>The band never performs with all members together, we are not an orchestra. As compensation we can have multiple gigs simultaniously.</p>
 
 <h2>Who is Ranzgruppe?</h2>

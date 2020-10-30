@@ -5,7 +5,7 @@
 
 <h2>Was ist Ranzgruppe?</h2>
 
-<p>Ranzgruppe ist eine Punk-Band aus Peine, Niedersachsen. Jeder kann mitmachen solange er ein Instrument spielen kann.</p>
+<p>Ranzgruppe ist eine Punk-Band aus Peine, Niedersachsen. Fast jeder kann mitmachen solange er ein Instrument spielen kann.</p>
 <p>Die Band tritt niemals komplett auf, wir sind ja kein Orchester. Dafür können mehrere Gigs synchron stattfinden.</p>
 
 <h2>Wer ist Ranzgruppe?</h2>
