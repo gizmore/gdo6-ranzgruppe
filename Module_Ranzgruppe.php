@@ -27,8 +27,8 @@ final class Module_Ranzgruppe extends GDO_Module
     public function getDependencies()
     {
         return ['Account', 'Admin', 'Audio', 'Avatar', 'Backup', 'Captcha', 'Classic', 'Comment', 'Contact',
-            'FontTitillium', 'Gallery', 'Guestbook', 'Invite', 'JQueryAutocomplete', 'Login', 'News', 'Profile',
-            'Recovery', 'Register', 'User', 'Vote',
+            'FontTitillium', 'Gallery', 'Guestbook', 'Invite', 'JQueryAutocomplete', 'Login', 'Memberlist',
+            'News', 'Profile', 'Recovery', 'Register', 'User', 'Vote',
         ];
     }
     
@@ -53,7 +53,7 @@ final class Module_Ranzgruppe extends GDO_Module
             $nav->addField(GDT_Link::make('link_join')->href(href('Register', 'Form')));
         }
         $nav->addFields(array(
-            GDT_Link::make('link_members')->href(href('Ranzgruppe', 'Members')),
+            GDT_Link::make('link_members')->href(href('Memberlist', 'View')),
             GDT_Link::make('link_gigs')->href(href('Ranzgruppe', 'Gigs')),
             GDT_Link::make('link_albums')->href(href('Audio', 'AlbumList')),
         ));
