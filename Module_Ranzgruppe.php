@@ -27,7 +27,7 @@ final class Module_Ranzgruppe extends GDO_Module
     public function getDependencies()
     {
         return ['Account', 'Admin', 'Audio', 'Avatar', 'Backup', 'Captcha', 'Classic', 'Comment', 'Contact',
-            'FontTitillium', 'Gallery', 'Guestbook', 'Invite', 'JQueryAutocomplete', 'Login', 'Memberlist',
+            'Favicon', 'FontTitillium', 'Gallery', 'Guestbook', 'Invite', 'JQueryAutocomplete', 'Login', 'Memberlist',
             'News', 'Perf', 'Profile', 'Recovery', 'Register', 'User', 'Vote',
         ];
     }
