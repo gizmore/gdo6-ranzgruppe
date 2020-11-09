@@ -5,6 +5,7 @@ use GDO\Core\GDO_Module;
 use GDO\UI\GDT_Bar;
 use GDO\UI\GDT_Link;
 use GDO\User\GDO_User;
+use GDO\UI\GDT_Headline;
 
 /**
  * Ranzgruppe! The biggest punk world in the obversable universe.
@@ -42,7 +43,7 @@ final class Module_Ranzgruppe extends GDO_Module
     public function hookTopBar(GDT_Bar $nav)
     {
         $nav->addFields(array(
-            GDT_Link::make('link_home')->href(href('Ranzgruppe', 'Home'))->css('font-size', '28px'),
+            GDT_Headline::withHTML(GDT_Link::make('link_home')->href(href('Ranzgruppe', 'Home'))->renderCell())->level(1)
         ));
     }
     
