@@ -8,7 +8,7 @@ use GDO\User\GDO_User;
 use GDO\UI\GDT_Headline;
 
 /**
- * Ranzgruppe! The biggest punk world in the obversable universe.
+ * Ranzgruppe! The biggest punk band in the obversable universe.
  * 
  * @author gizmore
  * @version 6.10
