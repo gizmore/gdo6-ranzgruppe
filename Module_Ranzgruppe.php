@@ -2,13 +2,14 @@
 namespace GDO\Ranzgruppe;
 
 use GDO\Core\GDO_Module;
-use GDO\UI\GDT_Bar;
 use GDO\UI\GDT_Link;
 use GDO\User\GDO_User;
 use GDO\UI\GDT_Headline;
+use GDO\UI\GDT_Page;
 
 /**
  * Ranzgruppe! The biggest punk band in the obversable universe.
+ * This is a demo site for gdo6.
  * 
  * @author gizmore
  * @version 6.10
@@ -40,24 +41,20 @@ final class Module_Ranzgruppe extends GDO_Module
     #############
     ### Hooks ###
     #############
-    public function hookTopBar(GDT_Bar $nav)
+    public function onInitSidebar()
     {
+        # Top
+        $nav = GDT_Page::$INSTANCE->topNav;
         $nav->addFields(array(
             GDT_Headline::withHTML(GDT_Link::make('link_home')->href(href('Ranzgruppe', 'Home'))->renderCell())->level(1)
         ));
-    }
-    
-    public function hookLeftBar(GDT_Bar $nav)
-    {
+        
+        # Left
+        $nav = GDT_Page::$INSTANCE->leftNav;
         if (GDO_User::current()->isGhost())
         {
             $nav->addField(GDT_Link::make('link_join')->href(href('Register', 'Form')));
         }
-        $nav->addFields(array(
-//             GDT_Link::make('link_members')->href(href('Memberlist', 'View')),
-//             GDT_Link::make('link_gigs')->href(href('Ranzgruppe', 'Gigs')),
-//             GDT_Link::make('link_albums')->href(href('Audio', 'AlbumList')),
-        ));
     }
 
 }
