@@ -33,7 +33,7 @@ final class Module_Ranzgruppe extends GDO_Module
         ];
     }
     
-    public function getThemes() { return ['ranzgruppe']; }
+    public function getTheme() { return 'ranzgruppe'; }
     
     public function onLoadLanguage() { return $this->loadLanguage('lang/ranzgruppe'); }
     
