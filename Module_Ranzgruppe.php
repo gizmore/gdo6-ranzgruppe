@@ -46,7 +46,7 @@ final class Module_Ranzgruppe extends GDO_Module
         # Top
         $nav = GDT_Page::$INSTANCE->topNav;
         $nav->addFields(array(
-            GDT_Headline::withHTML(GDT_Link::make('link_home')->href(href('Ranzgruppe', 'Home'))->renderCell())->level(1)
+            GDT_Link::make('link_home')->href(href('Ranzgruppe', 'Home')),
         ));
         
         # Left
