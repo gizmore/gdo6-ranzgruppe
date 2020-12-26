@@ -6,6 +6,7 @@ use GDO\UI\GDT_Link;
 use GDO\User\GDO_User;
 use GDO\UI\GDT_Headline;
 use GDO\UI\GDT_Page;
+use GDO\UI\GDT_DIV;
 
 /**
  * Ranzgruppe! The biggest punk band in the obversable universe.
@@ -38,23 +39,36 @@ final class Module_Ranzgruppe extends GDO_Module
     
     public function onLoadLanguage() { return $this->loadLanguage('lang/ranzgruppe'); }
     
+    ##############
+    ### Assets ###
+    ##############
+    public function onIncludeScripts()
+    {
+        $this->addCSS('css/ranzgruppe.css');
+    }
+    
     #############
     ### Hooks ###
     #############
     public function onInitSidebar()
     {
         # Top
-        $nav = GDT_Page::$INSTANCE->topNav;
-        $nav->addFields(array(
+        $tnav = GDT_Page::$INSTANCE->topNav;
+        $tnav->addFields(array(
             GDT_Link::make('link_home')->href(href('Ranzgruppe', 'Home')),
         ));
         
         # Left
-        $nav = GDT_Page::$INSTANCE->leftNav;
+        $lnav = GDT_Page::$INSTANCE->leftNav;
+        $lnav->addFieldFirst(GDT_DIV::make()->addClass("greek-siderbar-ornament"));
         if (GDO_User::current()->isGhost())
         {
-            $nav->addField(GDT_Link::make('link_join')->href(href('Register', 'Form')));
+            $lnav->addField(GDT_Link::make('link_join')->href(href('Register', 'Form')));
         }
+        
+        # Right
+        $rnav = GDT_Page::$INSTANCE->rightNav;
+        $rnav->addFieldFirst(GDT_DIV::make()->addClass("greek-siderbar-ornament"));
     }
 
 }
