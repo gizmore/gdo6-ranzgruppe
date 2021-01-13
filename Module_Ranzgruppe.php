@@ -4,7 +4,6 @@ namespace GDO\Ranzgruppe;
 use GDO\Core\GDO_Module;
 use GDO\UI\GDT_Link;
 use GDO\User\GDO_User;
-use GDO\UI\GDT_Headline;
 use GDO\UI\GDT_Page;
 use GDO\UI\GDT_DIV;
 
@@ -32,6 +31,13 @@ final class Module_Ranzgruppe extends GDO_Module
         return ['Account', 'Admin', 'Audio', 'Avatar', 'Backup', 'Captcha', 'Classic', 'Comment', 'Contact',
             'Favicon', 'FontTitillium', 'Gallery', 'Guestbook', 'Invite', 'JQueryAutocomplete', 'Login', 'Memberlist',
             'News', 'Perf', 'Profile', 'Recovery', 'Register', 'User', 'Vote',
+        ];
+    }
+    
+    public function getClasses()
+    {
+        return [
+            RANZ_Member::class,
         ];
     }
     
