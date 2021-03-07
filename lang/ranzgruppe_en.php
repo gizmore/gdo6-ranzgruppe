@@ -8,4 +8,5 @@ return array(
 
 'mtitle_ranzgruppe_home' => 'Ranzgruppe Website!',
 'mdescr_ranzgruppe_home' => 'Ranzgruppe wird die größte Punkband des Universums.',
+'keywords' => 'punk music,punk,fun project,wechall,challenge',
 );
