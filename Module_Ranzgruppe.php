@@ -6,14 +6,15 @@ use GDO\UI\GDT_Link;
 use GDO\User\GDO_User;
 use GDO\UI\GDT_Page;
 use GDO\UI\GDT_DIV;
+use GDO\Core\Application;
 
 /**
  * Ranzgruppe! The biggest punk band in the obversable universe.
  * This is a demo site for gdo6.
  * 
  * @author gizmore
- * @version 6.10
- * @since 6.10
+ * @version 6.10.1
+ * @since 6.10.0
  */
 final class Module_Ranzgruppe extends GDO_Module
 {
@@ -50,7 +51,10 @@ final class Module_Ranzgruppe extends GDO_Module
     ##############
     public function onIncludeScripts()
     {
-        $this->addCSS('css/ranzgruppe.css');
+        if (Application::instance()->hasTheme('ranzgruppe'))
+        {
+            $this->addCSS('css/ranzgruppe.css');
+        }
     }
     
     #############
