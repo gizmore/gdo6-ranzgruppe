@@ -5,6 +5,7 @@
 .gdo-body::after {
 	content: "";
 	background: url(../img/kachel.jpg);
+	background-size: contain;
 /* 	background-size: 100% 100%; */
 	opacity: 0.15;
 	top: 0;
